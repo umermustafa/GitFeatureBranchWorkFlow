@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About Page</title>
-    </head>
-    <body>
-        <h1>About Us</h1>
-        <img src="/images/about.jpg" alt="About Page">
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Course Info</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../pages/index.html">Home</a></li>
+        <li><a href="../pages/about.html">Web Development Lifecycle</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+    <h1>Web Development Life Cycle</h1>
+
+    <div class="center">
+      <p>Change color of text</p>
+      <button id="btn">Change Color</button>
+    </div>
+    <script>
+      const btn = document.querySelector('#btn');
+      btn.addEventListener("click", () => {
+        document.body.style.color = "#DE3163";
+      });
+    </script>
+    <table>
+      <tr>
+        <th>Stage</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Planning</td>
+        <td>Defining the scope, goals, and resources needed for the project.</td>
+      </tr>
+      <tr>
+        <td>Design</td>
+        <td>Creating wireframes, mockups, and prototypes to visualize the user interface and user experience.</td>
+      </tr>
+      <tr>
+        <td>Development</td>
+        <td>Writing the code, testing the functionality, and fixing any bugs that arise.</td>
+      </tr>
+      <tr>
+        <td>Testing</td>
+        <td>Checking the website or application for errors, performance issues, and user experience.</td>
+      </tr>
+      <tr>
+        <td>Deployment</td>
+        <td>Putting the website or application into production and making it accessible to the public.</td>
+      </tr>
+      <tr>
+        <td>Maintenance</td>
+        <td>Providing ongoing support and updating the website or application to keep it running smoothly.</td>
+      </tr>
+    </table>
+    <div class="image-container">
+      <img src="../images/Frameworks.webp" alt="Frameworks">
+      <h3>Frameworks for Web Development</h3>
+    </div>
+    <div class="image-container">
+      <img src="../images/Lifecycle.jpg" alt="Lifecycle">
+      <h3>Web Development Lifecycle</h3>
+    </div>
+    <div class="image-container">
+      <img src="../images/Resources.jpg" alt="Resources">
+      <h3>Resources for web development</h3>
+    </div>
+  </div>
+</body>
+
 </html>
