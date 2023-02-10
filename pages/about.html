@@ -26,51 +26,32 @@
     <script>
       const btn = document.querySelector('#btn');
       btn.addEventListener("click", () => {
-        document.body.style.color = "#DE3163";
+        let color = document.body.style.color;
+        if (color === 'black') {
+          document.body.style.color = 'red';
+        } else {
+          document.body.style.color = 'black';
+        }
       });
     </script>
     <table>
       <tr>
-        <th>Stage</th>
-        <th>Description</th>
+        <td> <img src="../images/Frameworks.webp" alt="Frameworks"></td>
+        <td> <img src="../images/Lifecycle.jpg" alt="Lifecycle"></td>
+        <td> <img src="../images/Resources.jpg" alt="Resources"></td>
       </tr>
       <tr>
-        <td>Planning</td>
-        <td>Defining the scope, goals, and resources needed for the project.</td>
-      </tr>
-      <tr>
-        <td>Design</td>
-        <td>Creating wireframes, mockups, and prototypes to visualize the user interface and user experience.</td>
-      </tr>
-      <tr>
-        <td>Development</td>
-        <td>Writing the code, testing the functionality, and fixing any bugs that arise.</td>
-      </tr>
-      <tr>
-        <td>Testing</td>
-        <td>Checking the website or application for errors, performance issues, and user experience.</td>
-      </tr>
-      <tr>
-        <td>Deployment</td>
-        <td>Putting the website or application into production and making it accessible to the public.</td>
-      </tr>
-      <tr>
-        <td>Maintenance</td>
-        <td>Providing ongoing support and updating the website or application to keep it running smoothly.</td>
+        <td>
+          <h3>Frameworks for Web Development</h3>
+        </td>
+        <td>
+          <h3>Web Development Lifecycle</h3>
+        </td>
+        <td>
+          <h3>Resources for web development</h3>
+        </td>
       </tr>
     </table>
-    <div class="image-container">
-      <img src="../images/Frameworks.webp" alt="Frameworks">
-      <h3>Frameworks for Web Development</h3>
-    </div>
-    <div class="image-container">
-      <img src="../images/Lifecycle.jpg" alt="Lifecycle">
-      <h3>Web Development Lifecycle</h3>
-    </div>
-    <div class="image-container">
-      <img src="../images/Resources.jpg" alt="Resources">
-      <h3>Resources for web development</h3>
-    </div>
   </div>
 </body>
 

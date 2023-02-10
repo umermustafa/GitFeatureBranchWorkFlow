@@ -30,13 +30,19 @@ body {
   .main p {
     text-align: center;
   }
-  .center{
+  .center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
+
+
   .main img {
+    height: 300px;
+  }
+
+  .pic img{
     width: 700px;
     height: 500px;
     margin: 20px;
