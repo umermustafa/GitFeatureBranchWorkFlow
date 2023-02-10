@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Course Info</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Web Development Lifecycle</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+    <h1>Web Development Life Cycle</h1>
+
+    <div class="center">
+      <p>Change color of text</p>
+      <button id="btn">Change Color</button>
+    </div>
+    <script>
+      const btn = document.querySelector('#btn');
+      btn.addEventListener("click", () => {
+        let color = document.body.style.color;
+        if (color === 'black') {
+          document.body.style.color = 'red';
+        } else {
+          document.body.style.color = 'black';
+        }
+      });
+    </script>
+    <table>
+      <tr>
+        <td> <img src="./images/Frameworks.webp" alt="Frameworks"></td>
+        <td> <img src="./images/Lifecycle.jpg" alt="Lifecycle"></td>
+        <td> <img src="./images/Resources.jpg" alt="Resources"></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Frameworks for Web Development</h3>
+        </td>
+        <td>
+          <h3>Web Development Lifecycle</h3>
+        </td>
+        <td>
+          <h3>Resources for web development</h3>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
